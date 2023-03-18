@@ -25,4 +25,4 @@ map('n', '<leader>x', ':bdelete %<CR>')
 
 -- NvimTree --
 map('n', '<C-b>', ':NvimTreeToggle<CR>')
-map('n', '<C-e>', ':NvimTreeFocus<CR>')
+map('n', '<leader>e', ':NvimTreeFocus<CR>')

@@ -56,12 +56,24 @@ return require('packer').startup({function(use)
 
 	use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
 
+    use {
+        "windwp/nvim-autopairs",
+        config = function() require("nvim-autopairs").setup {} end
+    }
+
 	use {'nvim-tree/nvim-tree.lua', requires = 'nvim-tree/nvim-web-devicons'}
+
+    use {
+        'goolord/alpha-nvim',
+        config = function ()
+            require'alpha'.setup(require'alpha.themes.dashboard'.config)
+        end
+    }
 
 end,
 config = {
-	display = {
-		open_fn = function()
+    display = {
+        open_fn = function()
 			return require('packer.util').float({ border = 'single' })
 		end,
 	},
