@@ -1,8 +1,16 @@
 -- Set Colorscheme
 vim.cmd("colorscheme catppuccin")
 
-local o = vim.o
-local g = vim.g
+local v = vim.opt
 
-o.number = true
-o.relativenumber = true
+v.number = true
+v.relativenumber = true
+
+v.tgc = true
+
+v.mouse = 'a'
+v.mousemev = true
+
+v.tabstop = 4
+v.shiftwidth = 4
+v.expandtab = true
