@@ -14,5 +14,14 @@ require("bufferline").setup{
 			return " " .. icon .. count
 		end,
 
+        offsets = {
+            {
+                filetype = "NvimTree",
+                text = "File Explorer",
+                text_align = "left",
+                highlight = "Directory",
+                separator = true -- use a "true" to enable the default, or set your own character
+            }
+        }
 	},
 }
