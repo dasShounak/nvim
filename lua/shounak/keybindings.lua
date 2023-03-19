@@ -10,6 +10,11 @@ map('i', 'jk', '<Esc>')
 map('n', '<C-s>', ':w<CR>')
 map('n', '<C-q>', ':q<CR>')
 
+map('i', '<C-h>', '<Left>')
+map('i', '<C-j>', '<Down>')
+map('i', '<C-k>', '<Up>')
+map('i', '<C-l>', '<Right>')
+
 map('n', '<leader><leader>', ':so<CR>')
 
 -- Telescope --
