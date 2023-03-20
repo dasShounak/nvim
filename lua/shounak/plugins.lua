@@ -70,6 +70,13 @@ return require('packer').startup({function(use)
         end
     }
 
+    use {
+        "NvChad/nvterm",
+        config = function ()
+            require("nvterm").setup()
+        end,
+    }
+
 end,
 config = {
     display = {
