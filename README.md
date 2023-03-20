@@ -1,4 +1,4 @@
 # nvim
 
 ### ToDo
-[ ] - Add list of plugins used
+- [ ] Add list of plugins used
