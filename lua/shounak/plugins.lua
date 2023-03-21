@@ -77,6 +77,8 @@ return require('packer').startup({function(use)
         end,
     }
 
+    use {"ellisonleao/glow.nvim", config = function() require("glow").setup() end}
+
 end,
 config = {
     display = {
