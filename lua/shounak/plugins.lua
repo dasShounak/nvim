@@ -86,6 +86,10 @@ return require('packer').startup({function(use)
 
     use "github/copilot.vim" 
 
+    use {"ellisonleao/glow.nvim", config = function() require("glow").setup() end}
+
+    use {'mbbill/undotree'}
+
 end,
 config = {
     display = {

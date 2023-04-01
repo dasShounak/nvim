@@ -40,3 +40,7 @@ local toggle_modes = {'n', 't'}
 map(toggle_modes, '<A-h>', function() nvterm.toggle('horizontal') end)
 map(toggle_modes, '<A-v>', function() nvterm.toggle('vertical') end)
 map(toggle_modes, '<A-i>', function() nvterm.toggle('float') end)
+
+-- UndoTree --
+map('n', '<leader><F5>', ':UndotreeToggle<CR>')
+map('n', '<leader><F6>', ':UndotreeFocus<CR>')
